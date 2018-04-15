@@ -1,6 +1,6 @@
 
 CC = clang++
-CFLAGS = -std=c++11 -DGTEST_USE_OWN_TR1_TUPLE -I.. -I. -Wall -Wextra -lpthread
+CFLAGS = -std=c++11 -g -O0 -fsanitize=address -DGTEST_USE_OWN_TR1_TUPLE -I.. -I. -Wall -Wextra -lpthread
 #OPENSSL_SUPPORT = -DCPPHTTPLIB_OPENSSL_SUPPORT -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib -lssl -lcrypto
 #ZLIB_SUPPORT = -DCPPHTTPLIB_ZLIB_SUPPORT -lz
 

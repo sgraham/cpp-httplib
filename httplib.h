@@ -1410,6 +1410,8 @@ inline bool Server::listen(const char* host, int port, int socket_flags)
         return false;
     }
 
+    ::usleep(500000);
+
     auto ret = true;
 
     for (;;) {

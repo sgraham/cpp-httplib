@@ -348,6 +348,12 @@ protected:
     thread              t_;
 };
 
+TEST_F(ServerTest, QuickStartStop)
+{
+    // Should not crash, especially when run with
+    // --gtest_filter=ServerTest.QuickStartStop --gtest_repeat=1000
+}
+
 TEST_F(ServerTest, GetMethod200)
 {
     auto res = cli_.get("/hi");
